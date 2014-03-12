@@ -28,7 +28,7 @@ Launching the WAR
 There are two tested methods for launching the WAR:
 
 1.  'java -jar jruby_on_rails_sample_app.war' - this launches the WAR and binds to localhost:8080.
-2.  Deploy to Tomcat using the standard manager or by placing this WAR in the your 'webapps' folder.
+2.  Deploy to Tomcat using the standard manager or by placing this WAR in the your 'webapps' folder.  Be sure to allow uploads >50MB.
 
 Renaming your App
 -----------------
@@ -56,6 +56,7 @@ To Do
 1.  Write some basic tests.
 2.  Test on Heroku.
 3.  Make the build script a little more configurable (but light on logic; just stuff like specify a branch to push to).
+4.  Start testing Trinidad or another application server.
 
 License
 -------
