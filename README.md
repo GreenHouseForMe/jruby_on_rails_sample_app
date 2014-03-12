@@ -16,7 +16,7 @@ Requirements
 To Build
 --------
 
-1.  Clone the repository.
+1.  Clone the repository
 2.  chmod +x ./build.sh
 3.  ./build.sh
 
