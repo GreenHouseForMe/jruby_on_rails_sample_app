@@ -44,6 +44,7 @@ Warbler::Config.new do |config|
   # An array of Bundler groups to avoid including in the war file.
   # Defaults to ["development", "test", "assets"].
   # config.bundle_without = []
+  config.bundle_without = ["development", "test"]
 
   # Other gems to be included. If you don't use Bundler or a gemspec
   # file, you need to tell Warbler which gems your application needs
@@ -131,16 +132,17 @@ Warbler::Config.new do |config|
   # * <tt>winstone</tt> (default) - Winstone 0.9.10 from sourceforge
   # * <tt>jenkins-ci.winstone</tt> - Improved Winstone from Jenkins CI
   # * <tt>jetty</tt> - Embedded Jetty from Eclipse
-  # config.webserver = 'jetty'
+  config.webserver = 'jetty'
 
   # Value of RAILS_ENV for the webapp -- default as shown below
   # config.webxml.rails.env = ENV['RAILS_ENV'] || 'production'
+  config.webxml.rails.env = 'production'
 
   # Application booter to use, one of :rack, :rails, or :merb (autodetected by default)
   # config.webxml.booter = :rails
 
   # Set JRuby to run in 1.9 mode.
-  # config.webxml.jruby.compat.version = "1.9"
+  config.webxml.jruby.compat.version = "1.9"
 
   # When using the :rack booter, "Rackup" script to use.
   # - For 'rackup.path', the value points to the location of the rackup
