@@ -3,8 +3,24 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
 
+# Wil this fix:
+# OpenSSL::Cipher::CipherError 
+# Illegal key size: possibly you need to install Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files for your JRE
+# Also, be sure to run:
+# rvm --debug osx-ssl-certs update all
+# After install jruby with RVM.
+gem 'jruby-openssl'
+
+# Add warbler for packaging and deployment to create our WARs.
+# Be sure to add a ./.rvmrc file to create a Gemset and specify
+# jruby as the default Ruby.
+gem 'warbler'
+
 # Use jdbcsqlite3 as the database for Active Record
-gem 'activerecord-jdbcsqlite3-adapter'
+# gem 'activerecord-jdbcsqlite3-adapter'
+
+# Use H2
+gem 'activerecord-jdbch2-adapter', :platform => :jruby
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
