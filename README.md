@@ -1,9 +1,11 @@
-jruby_on_rails_sample_app
-=========================
+JRuby on Rails 4 Sample App
+===========================
 
 A sample JRuby on Rails 4 application with simple build script to compile a WAR.
 
 The purpose of this project is to serve as a template for Rails 4 apps on JRuby.
+
+It also includes a .jdk-overlay for deployment on Heroku (not yet tested).
 
 Requirements
 ------------
@@ -47,6 +49,13 @@ Contributions
 3.  Write passing tests.
 4.  Push to your branch.
 5.  Send me a pull request.
+
+To Do
+-----
+
+1.  Write some basic tests.
+2.  Test on Heroku.
+3.  Make the build script a little more configurable (but light on logic; just stuff like specify a branch to push to).
 
 License
 -------
