@@ -84,7 +84,7 @@ Warbler::Config.new do |config|
 
   # Name of the MANIFEST.MF template for the war file. Defaults to a simple
   # MANIFEST.MF that contains the version of Warbler used to create the war file.
-  config.manifest_file = "config/MANIFEST.MF"
+  # config.manifest_file = "config/MANIFEST.MF"
 
   # When using the 'compiled' feature and specified, only these Ruby
   # files will be compiled. Default is to compile all \.rb files in
