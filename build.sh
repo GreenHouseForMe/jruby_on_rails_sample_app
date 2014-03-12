@@ -5,6 +5,10 @@
 # Banner:
 echo "=====[ Simple Builder ]====="
 
+echo "-----> Running bundler..."
+bundle
+echo "       'bundle' complete!"
+
 # Perform a git add and commit:
 echo "-----> Adding changes to repo..."
 git add --all
