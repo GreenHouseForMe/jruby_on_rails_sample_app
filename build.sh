@@ -14,7 +14,7 @@ git commit -m "Commit before build."
 
 # Precompile assets:
 echo "-----> Precompiling assets:"
-rake assets:precomile
+rake assets:precompile
 
 # Run our test suite:
 # echo "-----> Running test suite:"
