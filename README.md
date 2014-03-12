@@ -33,7 +33,7 @@ Renaming your App
 
 1.  Please use the following gem to rename (and automatically refactor) your Rails app name:
 
-[The rename gem by moshedalam](https://github.com/morshedalam/rename)
+   * [The rename gem by moshedalam](https://github.com/morshedalam/rename)
 
 2.  Remove and add a new origin for your git repository.
 
