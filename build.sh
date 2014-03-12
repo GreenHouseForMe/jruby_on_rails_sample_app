@@ -29,9 +29,9 @@ warble executable war
 echo "       'warble executable war' complete!"
 
 # Git push (modifiy or comment out as necessary):
-# echo "-----> Pushing to origin on master branch:"
-# git push master
-# echo "       'git push master' complete!"
+echo "-----> Pushing to origin on master branch:"
+git push origin master
+echo "       'git push origin master' complete!"
 
 # Deploy to Heroku:
 # echo "-----> Deploying to Heroku:"
