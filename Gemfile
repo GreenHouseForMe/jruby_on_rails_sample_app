@@ -20,7 +20,8 @@ gem 'warbler'
 # gem 'activerecord-jdbcsqlite3-adapter'
 
 # Use H2
-gem 'activerecord-jdbch2-adapter', :platform => :jruby
+gem 'activerecord-jdbch2-adapter', '~> 1.3.15',  :platform => :jruby
+gem 'jdbc-h2', '~> 1.3.0', :platform => :jruby
 
 # Use SCSS for stylesheets
 #gem 'sass-rails', '~> 4.0.0'
